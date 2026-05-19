@@ -134,6 +134,21 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_hjTBIELJEfGL-aoP5-C5zA" name="Resource"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_PaaSIFN9EfGxn8QtHyjOLA" name="DDynamic" visibility="public">
+        <packagedElement xmi:type="uml:Class" xmi:id="_iu-TEFN9EfGxn8QtHyjOLA" name="PricingImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_61H24FOBEfGxn8QtHyjOLA" name="peakPercentage" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_CpgZMFOCEfGxn8QtHyjOLA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_L3qx4VOCEfGxn8QtHyjOLA" type="_wd8_YELFEfGL-aoP5-C5zA" association="_L3P7IFOCEfGxn8QtHyjOLA"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_L3P7IFOCEfGxn8QtHyjOLA" memberEnd="_L3qx4VOCEfGxn8QtHyjOLA _L3sAAVOCEfGxn8QtHyjOLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L3qK0FOCEfGxn8QtHyjOLA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L3qx4FOCEfGxn8QtHyjOLA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_L3sAAVOCEfGxn8QtHyjOLA" type="_iu-TEFN9EfGxn8QtHyjOLA" association="_L3P7IFOCEfGxn8QtHyjOLA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uW_vYELEEfGDjNyYxieW3A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uXSqUELEEfGDjNyYxieW3A" source="PapyrusVersion">
@@ -164,4 +179,8 @@
   <umlvmprofile:module xmi:id="_aqL0QELJEfGL-aoP5-C5zA" base_Package="_W0IvwELJEfGL-aoP5-C5zA"/>
   <umlvmprofile:pk xmi:id="_syNwoELJEfGL-aoP5-C5zA" base_Property="_qxKe4ELJEfGL-aoP5-C5zA"/>
   <umlvmprofile:pk xmi:id="_G2SL0E4VEfGpQ8f2h6phwA" base_Property="_fQg7oELIEfGL-aoP5-C5zA"/>
+  <umlvmprofile:delta xmi:id="_hKFY4FN9EfGxn8QtHyjOLA" base_Package="_PaaSIFN9EfGxn8QtHyjOLA"/>
+  <umlvmprofile:modifiedClass xmi:id="_lQt3EFN9EfGxn8QtHyjOLA" base_Class="_iu-TEFN9EfGxn8QtHyjOLA"/>
+  <umlvmprofile:modifies xmi:id="_Sk9wUFOCEfGxn8QtHyjOLA" base_Association="_L3P7IFOCEfGxn8QtHyjOLA"/>
+  <umlvmprofile:adds xmi:id="_T-3igFOCEfGxn8QtHyjOLA" base_Property="_61H24FOBEfGxn8QtHyjOLA"/>
 </xmi:XMI>
