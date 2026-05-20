@@ -143,12 +143,32 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_L3qx4VOCEfGxn8QtHyjOLA" type="_wd8_YELFEfGL-aoP5-C5zA" association="_L3P7IFOCEfGxn8QtHyjOLA"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LoyOAFRWEfGzluO3XqIYgg" name="DCancellationPaid">
+        <packagedElement xmi:type="uml:Class" xmi:id="_VJ1tgFRWEfGzluO3XqIYgg" name="CancellationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_d2WKoFRWEfGzluO3XqIYgg" name="refundAmount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qq9QIFRXEfGzluO3XqIYgg" name="penaltyFee">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QpYvMFRYEfGzluO3XqIYgg" name="cancellationimpl" type="_mdP6AELGEfGL-aoP5-C5zA" association="_QpYIIFRYEfGzluO3XqIYgg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QpYvMVRYEfGzluO3XqIYgg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QpYvMlRYEfGzluO3XqIYgg" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_L3P7IFOCEfGxn8QtHyjOLA" memberEnd="_L3qx4VOCEfGxn8QtHyjOLA _L3sAAVOCEfGxn8QtHyjOLA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L3qK0FOCEfGxn8QtHyjOLA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L3qx4FOCEfGxn8QtHyjOLA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_L3sAAVOCEfGxn8QtHyjOLA" type="_iu-TEFN9EfGxn8QtHyjOLA" association="_L3P7IFOCEfGxn8QtHyjOLA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QpYIIFRYEfGzluO3XqIYgg" memberEnd="_QpYvMFRYEfGzluO3XqIYgg _QpYvM1RYEfGzluO3XqIYgg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QpYIIVRYEfGzluO3XqIYgg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QpYIIlRYEfGzluO3XqIYgg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QpYvM1RYEfGzluO3XqIYgg" name="cancellationimpl" type="_VJ1tgFRWEfGzluO3XqIYgg" association="_QpYIIFRYEfGzluO3XqIYgg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uW_vYELEEfGDjNyYxieW3A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uXSqUELEEfGDjNyYxieW3A" source="PapyrusVersion">
@@ -183,4 +203,9 @@
   <umlvmprofile:modifiedClass xmi:id="_lQt3EFN9EfGxn8QtHyjOLA" base_Class="_iu-TEFN9EfGxn8QtHyjOLA"/>
   <umlvmprofile:modifies xmi:id="_Sk9wUFOCEfGxn8QtHyjOLA" base_Association="_L3P7IFOCEfGxn8QtHyjOLA"/>
   <umlvmprofile:adds xmi:id="_T-3igFOCEfGxn8QtHyjOLA" base_Property="_61H24FOBEfGxn8QtHyjOLA"/>
+  <umlvmprofile:delta xmi:id="_SY9hUFRWEfGzluO3XqIYgg" base_Package="_LoyOAFRWEfGzluO3XqIYgg"/>
+  <umlvmprofile:modifiedClass xmi:id="_YJ_r0FRWEfGzluO3XqIYgg" base_Class="_VJ1tgFRWEfGzluO3XqIYgg"/>
+  <umlvmprofile:adds xmi:id="_wEgHsFRXEfGzluO3XqIYgg" base_Property="_d2WKoFRWEfGzluO3XqIYgg"/>
+  <umlvmprofile:adds xmi:id="_wzyPkFRXEfGzluO3XqIYgg" base_Property="_qq9QIFRXEfGzluO3XqIYgg"/>
+  <umlvmprofile:modifies xmi:id="_SVVToFRYEfGzluO3XqIYgg" base_Association="_QpYIIFRYEfGzluO3XqIYgg"/>
 </xmi:XMI>
