@@ -4,7 +4,7 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_uYiAcELEEfGDjNyYxieW3A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Package" xmi:id="_VhCF8ELFEfGL-aoP5-C5zA" name="Reservation">
+    <packagedElement xmi:type="uml:Package" xmi:id="_VhCF8ELFEfGL-aoP5-C5zA" name="TargetEmail">
       <packagedElement xmi:type="uml:Package" xmi:id="_apbjIELFEfGL-aoP5-C5zA" name="MBookingType">
         <packagedElement xmi:type="uml:Class" xmi:id="_doq7cELFEfGL-aoP5-C5zA" name="BookingTypeImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KzSe8ELHEfGL-aoP5-C5zA" name="idBooking" visibility="protected">
@@ -136,11 +136,26 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_PaaSIFN9EfGxn8QtHyjOLA" name="DDynamic" visibility="public">
         <packagedElement xmi:type="uml:Class" xmi:id="_iu-TEFN9EfGxn8QtHyjOLA" name="PricingImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_61H24FOBEfGxn8QtHyjOLA" name="peakPercentage" visibility="protected">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_61H24FOBEfGxn8QtHyjOLA" name="peakPercentage" visibility="private" aggregation="composite">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WP-ZYF0NEfGFs8thxWCwYQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WMXrwF0NEfGFs8thxWCwYQ" value="*"/>
             <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_CpgZMFOCEfGxn8QtHyjOLA"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_L3qx4VOCEfGxn8QtHyjOLA" type="_wd8_YELFEfGL-aoP5-C5zA" association="_L3P7IFOCEfGxn8QtHyjOLA"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_bbTrQF0MEfGFs8thxWCwYQ" name="DEmail">
+        <packagedElement xmi:type="uml:Class" xmi:id="_siICQF0MEfGFs8thxWCwYQ" name="NotificationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KW8V4F0NEfGFs8thxWCwYQ" name="targetEmail" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mM6-QF0NEfGFs8thxWCwYQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mKDQcF0NEfGFs8thxWCwYQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GOk84F0OEfGFs8thxWCwYQ" name="notificationimpl" type="_XJbxsELGEfGL-aoP5-C5zA" association="_GOgEYF0OEfGFs8thxWCwYQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GOlj8F0OEfGFs8thxWCwYQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GOlj8V0OEfGFs8thxWCwYQ" value="1"/>
+          </ownedAttribute>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -149,6 +164,12 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L3qx4FOCEfGxn8QtHyjOLA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_L3sAAVOCEfGxn8QtHyjOLA" type="_iu-TEFN9EfGxn8QtHyjOLA" association="_L3P7IFOCEfGxn8QtHyjOLA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GOgEYF0OEfGFs8thxWCwYQ" memberEnd="_GOk84F0OEfGFs8thxWCwYQ _GOmLAF0OEfGFs8thxWCwYQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GOjHsF0OEfGFs8thxWCwYQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GOjuwF0OEfGFs8thxWCwYQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GOmLAF0OEfGFs8thxWCwYQ" name="notificationimpl" type="_siICQF0MEfGFs8thxWCwYQ" association="_GOgEYF0OEfGFs8thxWCwYQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uW_vYELEEfGDjNyYxieW3A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uXSqUELEEfGDjNyYxieW3A" source="PapyrusVersion">
@@ -183,4 +204,8 @@
   <umlvmprofile:modifiedClass xmi:id="_lQt3EFN9EfGxn8QtHyjOLA" base_Class="_iu-TEFN9EfGxn8QtHyjOLA"/>
   <umlvmprofile:modifies xmi:id="_Sk9wUFOCEfGxn8QtHyjOLA" base_Association="_L3P7IFOCEfGxn8QtHyjOLA"/>
   <umlvmprofile:adds xmi:id="_T-3igFOCEfGxn8QtHyjOLA" base_Property="_61H24FOBEfGxn8QtHyjOLA"/>
+  <umlvmprofile:delta xmi:id="_qwVUgF0MEfGFs8thxWCwYQ" base_Package="_bbTrQF0MEfGFs8thxWCwYQ"/>
+  <umlvmprofile:modifiedClass xmi:id="_xjpbYF0MEfGFs8thxWCwYQ" base_Class="_siICQF0MEfGFs8thxWCwYQ"/>
+  <umlvmprofile:adds xmi:id="_Nh5O8F0NEfGFs8thxWCwYQ" base_Property="_KW8V4F0NEfGFs8thxWCwYQ"/>
+  <umlvmprofile:modifies xmi:id="_N5kSoF0OEfGFs8thxWCwYQ" base_Association="_GOgEYF0OEfGFs8thxWCwYQ"/>
 </xmi:XMI>
