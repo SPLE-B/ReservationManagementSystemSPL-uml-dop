@@ -4,7 +4,7 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_uYiAcELEEfGDjNyYxieW3A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Package" xmi:id="_VhCF8ELFEfGL-aoP5-C5zA" name="TargetEmail">
+    <packagedElement xmi:type="uml:Package" xmi:id="_VhCF8ELFEfGL-aoP5-C5zA" name="Reservation">
       <packagedElement xmi:type="uml:Package" xmi:id="_apbjIELFEfGL-aoP5-C5zA" name="MBookingType">
         <packagedElement xmi:type="uml:Class" xmi:id="_doq7cELFEfGL-aoP5-C5zA" name="BookingTypeImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KzSe8ELHEfGL-aoP5-C5zA" name="idBooking" visibility="protected">
@@ -158,6 +158,20 @@
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_QRdc0F1rEfGvBt6mHMDp7Q" name="DCancellationPaid">
+        <packagedElement xmi:type="uml:Class" xmi:id="_bqCeoF1rEfGvBt6mHMDp7Q" name="CancellationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kW-ZkF1rEfGvBt6mHMDp7Q" name="refundAmount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vfJA0F1rEfGvBt6mHMDp7Q" name="penaltyFee">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9N4BsF1rEfGvBt6mHMDp7Q" name="cancellationimpl" type="_mdP6AELGEfGL-aoP5-C5zA" association="_9Nws8F1rEfGvBt6mHMDp7Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9N4BsV1rEfGvBt6mHMDp7Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9N5P0F1rEfGvBt6mHMDp7Q" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_L3P7IFOCEfGxn8QtHyjOLA" memberEnd="_L3qx4VOCEfGxn8QtHyjOLA _L3sAAVOCEfGxn8QtHyjOLA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L3qK0FOCEfGxn8QtHyjOLA" source="org.eclipse.papyrus">
@@ -170,6 +184,12 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GOjuwF0OEfGFs8thxWCwYQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_GOmLAF0OEfGFs8thxWCwYQ" name="notificationimpl" type="_siICQF0MEfGFs8thxWCwYQ" association="_GOgEYF0OEfGFs8thxWCwYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9Nws8F1rEfGvBt6mHMDp7Q" memberEnd="_9N4BsF1rEfGvBt6mHMDp7Q _9N5P0V1rEfGvBt6mHMDp7Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9N2zkF1rEfGvBt6mHMDp7Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9N2zkV1rEfGvBt6mHMDp7Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_9N5P0V1rEfGvBt6mHMDp7Q" name="cancellationimpl" type="_bqCeoF1rEfGvBt6mHMDp7Q" association="_9Nws8F1rEfGvBt6mHMDp7Q"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uW_vYELEEfGDjNyYxieW3A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uXSqUELEEfGDjNyYxieW3A" source="PapyrusVersion">
@@ -208,4 +228,9 @@
   <umlvmprofile:modifiedClass xmi:id="_xjpbYF0MEfGFs8thxWCwYQ" base_Class="_siICQF0MEfGFs8thxWCwYQ"/>
   <umlvmprofile:adds xmi:id="_Nh5O8F0NEfGFs8thxWCwYQ" base_Property="_KW8V4F0NEfGFs8thxWCwYQ"/>
   <umlvmprofile:modifies xmi:id="_N5kSoF0OEfGFs8thxWCwYQ" base_Association="_GOgEYF0OEfGFs8thxWCwYQ"/>
+  <umlvmprofile:delta xmi:id="_Ty6KUF1rEfGvBt6mHMDp7Q" base_Package="_QRdc0F1rEfGvBt6mHMDp7Q"/>
+  <umlvmprofile:modifiedClass xmi:id="_fnhn4F1rEfGvBt6mHMDp7Q" base_Class="_bqCeoF1rEfGvBt6mHMDp7Q"/>
+  <umlvmprofile:adds xmi:id="_zGVxAF1rEfGvBt6mHMDp7Q" base_Property="_kW-ZkF1rEfGvBt6mHMDp7Q"/>
+  <umlvmprofile:adds xmi:id="_z6LBsF1rEfGvBt6mHMDp7Q" base_Property="_vfJA0F1rEfGvBt6mHMDp7Q"/>
+  <umlvmprofile:modifies xmi:id="_-vuO8F1rEfGvBt6mHMDp7Q" base_Association="_9Nws8F1rEfGvBt6mHMDp7Q"/>
 </xmi:XMI>
